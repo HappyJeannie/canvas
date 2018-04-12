@@ -1,7 +1,23 @@
 body{
   background: #ccc;
+  position: relative;
 }
-#canvas{
-  border:1px solid #eee;
-  
+
+.btn{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 4px 10px;
+  background: none;
+  border:1px solid #666;
+  border-radius: 4px;
+  outline: none;
+  &.active{
+    color: #fff;
+    background: #337ab7;
+    border-color: #337ab7;
+  }
+}
+#brush{
+  display: none;
 }
