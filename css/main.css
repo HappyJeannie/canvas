@@ -1,6 +1,7 @@
 body {
   background: #ccc;
   position: relative;
+  overflow: hidden;
 }
 .btn {
   position: fixed;
@@ -17,6 +18,82 @@ body {
   background: #337ab7;
   border-color: #337ab7;
 }
-#brush {
-  display: none;
+#eraser {
+  display: block;
+  left: 50px;
+}
+.icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 1.4em;
+  width: 1.4em;
+}
+.icon.active {
+  fill: red;
+}
+#clean {
+  left: 84px;
+  width: 1.1em;
+  height: 1.1em;
+  top: 22px;
+}
+#download {
+  left: 112px;
+}
+.color {
+  position: fixed;
+  left: 20px;
+  top: 60px;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.color li {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: red;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.color li:nth-child(2) {
+  background: yellow;
+}
+.color li:nth-child(3) {
+  background: blue;
+}
+.color li.active {
+  transform: scale(1.2);
+}
+.line {
+  position: fixed;
+  right: 20px;
+  top: 30px;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.line li {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #000;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+.line li:nth-child(2) {
+  height: 6px;
+}
+.line li.active {
+  border-color: #eee;
+}
+#canvas {
+  position: fixed;
+  left: 0px;
+  top: 0px;
 }

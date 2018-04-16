@@ -7,11 +7,33 @@
   <title>Canvas</title>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/main.css">
+  <script src="//at.alicdn.com/t/font_627300_yxv1z7o9p13sdcxr.js"></script>
 </head>
 <body>
   <canvas id="canvas" width=300 height=300></canvas>
-  <button id="eraser" class="btn">橡皮擦</button>
-  <button id="brush" class="btn">画笔</button>
+  <!-- <button id="eraser" class="btn">橡皮擦</button>
+  <button id="brush" class="btn">画笔</button> -->
+  <svg class="icon active" id="brush" aria-hidden="true">
+      <use xlink:href="#icon-cc-pencil"></use>
+  </svg>
+  <svg class="icon" id="eraser" aria-hidden="true">
+      <use xlink:href="#icon-eraser"></use>
+  </svg>
+  <svg class="icon" id="clean" aria-hidden="true">
+      <use xlink:href="#icon-forbid_icon"></use>
+  </svg>
+  <svg class="icon" id="download" aria-hidden="true">
+      <use xlink:href="#icon-DOWNLOAD"></use>
+  </svg>
+    <ul class="color">
+        <li id="red" class=""></li>
+        <li id="yellow" class=""></li>
+        <li id="blue" class=""></li>
+    </ul>
+    <ul class="line">
+        <li id="thin" class=""></li>
+        <li id="thick" class=""></li>
+    </ul>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
